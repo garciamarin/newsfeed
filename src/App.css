@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+*{
+    box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+background-color: rgb(247, 146, 14);
 }
+.searchContainer, .pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    
+} 
+/* 
+.inputContainer{
+    border:red solid;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+}  */
+.sorting{
+    /* text-align: right; */
+    /* position: relative;
+     left:5vh;  */
+     margin-left: 7vh; 
+     
+
+
+    /* flex-grow: 1;
+    margin:auto; */
+}
+.typewriter {
+   /* width:max-content; */
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap; 
+    margin: 0 auto;
+    letter-spacing: .15em; 
+    animation: 
+      typing 5s steps(40, end),
+      blink-caret .75s step-end infinite;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 50% }
   }
-  to {
-    transform: rotate(360deg);
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color:orange ; }
   }
-}
+  .centered{
+      text-align: center;
+      /* margin:auto; */
+  }

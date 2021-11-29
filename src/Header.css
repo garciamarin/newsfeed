@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+header {
+    background-color: rgb(93, 153, 179);
+    /* #7573be; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo{
+    width: 200px;
+    /* border:black solid; */
+
+}
+.title{
+    color:rgb(255, 165, 0);
+}
+.navitem{
+    color:orange;
+    margin:1em;  
+    display:inline;
+}

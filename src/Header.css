@@ -2,8 +2,8 @@
     box-sizing: border-box;
 }
 header {
-    background-color: rgb(93, 153, 179);
-    /* #7573be; */
+    background-color:#28524F;
+     /* rgb(93, 153, 179); */
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -14,7 +14,9 @@ header {
 
 }
 .title{
-    color:rgb(255, 165, 0);
+    color:rgb(93, 153, 179); 
+    /* #524B2C; */
+    /* rgb(255, 165, 0); */
 }
 .navitem{
     color:orange;

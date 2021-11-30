@@ -2,7 +2,9 @@
     box-sizing: border-box;
 }
 body {
-background-color: rgb(247, 146, 14);
+background-color:#28524F;
+ /* #9E8F4D; */
+/* rgb(247, 146, 14); */
 }
 .searchContainer, .pagination{
     display: flex;
@@ -48,5 +50,4 @@ background-color: rgb(247, 146, 14);
   }
   .centered{
       text-align: center;
-      /* margin:auto; */
   }

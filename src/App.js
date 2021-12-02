@@ -20,9 +20,9 @@ const searchInput = function (e) {
   setPage(0)
 }
 const FrontPage = function(){
- Setsearch("tags=front_page")
- inputValue.current.value = ""
- setPage(0)
+  Setsearch("tags=front_page")
+  inputValue.current.value = ""
+  setPage(0)
 }
 const Next = function (e){
   let newPage = page

@@ -6,7 +6,15 @@ header {
      /* rgb(93, 153, 179); */
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+}
+.title:before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    border-top: 80px solid white;
+    border-left: 80px solid #704f6b;
+    width: 0;
 }
 .logo{
     width: 200px;

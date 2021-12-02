@@ -1,8 +1,7 @@
 import './Entry.css'
 
 export default function Entry({page,index,entry, entry: {title, author, url,created_at, points, story_title, story_url} }) {
-    // console.log("feed ",feed)  
-    // console.log("feed2 ",feed2)  
+    
   const date = new Date(created_at)
   
   const ellapsedTimeHuman = function (date){

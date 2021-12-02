@@ -1,5 +1,6 @@
 
 .entryContainer{
+    position:relative;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -8,20 +9,19 @@
     background-color: #9E6D97;
     margin: 1em auto;
     width: 85%;
-    box-shadow: .2em .5em;
+    box-shadow: -.2em  .5em;
 }
-
-
-.entryNumber{
-    padding: 1em;
-}
-.entryNumber:before {
+.entryContainer:before {
     content: '';
     position: absolute;
     top: 0; right: 0;
-    border-top: 80px solid white;
-    border-left: 80px solid #9E6D97;
+    border-top: 30px solid #28524F;
+    border-left: 30px solid #704f6b;
     width: 0;
+}
+
+.entryNumber{
+    padding: 1em;
 }
 .entryContent{
     display: flex;
@@ -31,6 +31,16 @@
     padding: 1em;
     flex-grow:1;
 }
+
+/* .entryNumber:before {
+    content: '';
+    position: relative;
+    top: 0; right: 0;
+    border-top: 40px solid white;
+    border-left: 40px solid #9E6D97;
+    width: 0;
+} */
+
  .entryMain, .entrySecondary{
     display: flex;
     flex-direction: row;

@@ -32,6 +32,7 @@ background-color:#28524F;
 .typewriter {
    /* width:max-content; */
     overflow: hidden;
+    color: #28524F;
     border-right: .15em solid orange;
     white-space: nowrap; 
     margin: 0 auto;

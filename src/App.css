@@ -40,13 +40,14 @@ background-color:#28524F;
 .typewriter {
    /* width:max-content; */
     overflow: hidden;
-    color: #28524F;
+    color: rgb(93, 153, 179);
+    font-weight: 700;
     border-right: .15em solid orange;
     white-space: nowrap; 
-    margin: 0 auto;
+    margin: 10% auto;
     letter-spacing: .15em; 
     animation: 
-      typing 5s steps(40, end),
+      typing 2s steps(40, end),
       blink-caret .75s step-end infinite;
   }
   @keyframes typing {
@@ -71,4 +72,13 @@ background-color:#28524F;
     border: #704f6b .3em solid;
     border-radius: 10px;
     
+}
+.loading{
+    margin:auto;
+    width: 400px;
+    /* border:black solid; */
+}
+.loading_container{
+    text-align: center;
+    display: block;
 }

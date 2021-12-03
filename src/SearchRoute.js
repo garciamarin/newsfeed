@@ -13,7 +13,6 @@ function Search() {
 const params = useParams();
 
 const prvSearch = params.value ? params.value : "tags=front_page"
-console.log("prev",params.value,prvSearch)
 const [search, Setsearch] = useState(prvSearch)
 const [page, setPage] = useState(0)
 const [sortingOn, setSorting] = useState(false)
@@ -27,8 +26,8 @@ useEffect(()=> {
                 } ,[])
 
 
-const searchInput = function (e) {
-    Setsearch("query=" + e.target.value)
+const searchInput = function () {
+    Setsearch("query=" + inputValue.current.value )
     setPage(0)
 }
 
@@ -70,12 +69,11 @@ const renderResult = () =>{
 return (
     <div >
         <Header/>
-        
         <div className="searchContainer">
             <div className="inputContainer"> 
                 <input type="text" onChange={searchInput} ref={inputValue} /> 
                 <button className='search_Button' onClick={searchInput}>
-                    Search! 
+                    Search
                 </button>
                 <button className='search_Button' onClick={FrontPage}>
                     Front Page

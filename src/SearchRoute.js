@@ -11,7 +11,7 @@ import useResults from './useResults';
 
 function Search() {
 const params = useParams();
-
+console.log(params)
 const prvSearch = params.value ? params.value : "tags=front_page"
 const [search, Setsearch] = useState(prvSearch)
 const [page, setPage] = useState(0)

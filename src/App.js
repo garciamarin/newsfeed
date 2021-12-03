@@ -53,7 +53,6 @@ const renderResult = () =>{
   return (
     <div >
       <Header/>
-      Cambio
       <div className="searchContainer">
         <div className="inputContainer"> 
           <input type="text" onChange={searchInput} ref={inputValue} /> 

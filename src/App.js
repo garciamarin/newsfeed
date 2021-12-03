@@ -34,7 +34,7 @@ const Next = function (e){
 
 const renderResult = () =>{
   let render = null
-  if (isError) render = <h1 className='centered'>Sorry, Dogo had trouble finding news. </h1>
+  if (isError) render = <h1 className='centered'>Sorry, Doggo had trouble finding news. </h1>
   else if (isLoading) render = <div className='typewriter'>Give Dogo a second, man!</div>
   else if (!feed.length) <h2 className='centered'> Ask an andult for assistance: Dogo found no results for your search!</h2>
   else render = feed.map((entry, index) => 
@@ -51,11 +51,11 @@ const renderResult = () =>{
       <div className="searchContainer">
         <div className="inputContainer"> 
           <input type="text" onChange={searchInput} ref={inputValue} /> 
-          <button onClick={searchInput}>Search! </button>
-          <button onClick={FrontPage}>Back to Front Page</button>
+          <button className='search_Button' onClick={searchInput}>Search! </button>
+          <button className='search_Button' onClick={FrontPage}>Front Page</button>
         </div>
         <div className='sorting'>
-          <label htmlFor="sortDate">{sortingOn?'By relevance':'Newest First'}
+          <label className='Newest' htmlFor="sortDate">Newest first
           <input type="checkbox" name="sortDate" id="sortDate" onChange={()=>{setSorting(!sortingOn)}} />
           </label>
         </div>  

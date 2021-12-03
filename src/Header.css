@@ -3,24 +3,38 @@
 }
 header {
     background-color:#28524F;
-     /* rgb(93, 153, 179); */
+    margin:auto;
+    width: 85%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    
 }
+
+/* .container{
+    
+} */
+
 .title:before {
     content: '';
     position: absolute;
     top: 0; right: 0;
-    border-top: 80px solid white;
-    border-left: 80px solid #704f6b;
+    border-top: 8vw solid rgb(255, 255, 255,.3);
+    border-left: 8vw solid #704f6b;
     width: 0;
 }
 .logo{
     width: 200px;
     /* border:black solid; */
-
 }
+@media only screen and (max-width: 700px) {
+    .logo{
+        width: 30vw;
+        margin: 0 7px;
+
+        /* border:black solid; */
+    }
+  }
 .title{
     color:rgb(93, 153, 179); 
     /* #524B2C; */

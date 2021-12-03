@@ -11,7 +11,7 @@ const [maxPages, setMax]=useState(1)
 
 
 function load(search, sortingOn) {
-    const url = sortingOn?' http://hn.algolia.com/api/v1/search_by_date?'+ search 
+    const url = sortingOn?' https://hn.algolia.com/api/v1/search_by_date?'+ search 
                           : baseURL  + search
     setError(false)
     loadToggler(true)

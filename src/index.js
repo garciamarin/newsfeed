@@ -9,8 +9,8 @@ ReactDOM.render(
   // <BrowserRouter>
   <HashRouter>
     <Routes>
-      <Route  path="newsfeed/" element={<App />} />
-      <Route  path="newsfeed/search" element={<Search />} >
+      <Route  path="/" element={<App />} />
+      <Route  path="search" element={<Search />} >
         <Route path="=:value" /> 
       </Route>
     </Routes>

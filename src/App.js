@@ -17,8 +17,8 @@ const inputValue = useRef("")
 
 useEffect(()=> {load(search, sortingOn)} ,[]&&[search, sortingOn])
 
-const searchInput = function (e) {
-  Setsearch("query=" + e.target.value)
+const searchInput = function () {
+  Setsearch("query=" + inputValue.current.value )
   setPage(0)
 }
 const FrontPage = function(){

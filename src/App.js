@@ -56,13 +56,14 @@ const renderResult = () =>{
       <div className="searchContainer">
         <div className="inputContainer"> 
           <input type="text" onChange={searchInput} ref={inputValue} /> 
-          <button className='search_Button' onClick={searchInput}>Search! </button>
+          <button className='search_Button' onClick={searchInput}>Search</button>
           <button className='search_Button' onClick={FrontPage}>Front Page</button>
         </div>
         <div className='sorting'>
-          <label className='Newest' htmlFor="sortDate">Newest first
-          <input type="checkbox" name="sortDate" id="sortDate" onChange={()=>{setSorting(!sortingOn)}} />
-          </label>
+          <label className='Newest' htmlFor="sortDate" htmlFor="sortDate"> Newest first</label>
+
+          <input type="checkbox" className="checkbox-css" name="sortDate" id="sortDate" onChange={()=>{setSorting(!sortingOn)}} />
+          
         </div>  
       </div>
 

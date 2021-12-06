@@ -9,7 +9,7 @@ background-color:#28524F;
 .searchContainer, .pagination{
     
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin: 1em;
     flex-wrap: wrap;
@@ -20,23 +20,8 @@ background-color:#28524F;
     margin: 3px auto;
 }
 
-.inputContainer{
-    margin-bottom: 2px;
-
-    
-
-}  
-.sorting{
-    /* text-align: right; */
-    /* position: relative;
-     left:5vh;  */
-     margin-left: 7vh; 
-     
 
 
-    /* flex-grow: 1;
-    margin:auto; */
-}
 .typewriter {
    /* width:max-content; */
     overflow: hidden;
@@ -47,32 +32,74 @@ background-color:#28524F;
     margin: 10% auto;
     letter-spacing: .15em; 
     animation: 
-      typing 2s steps(40, end),
-      blink-caret .75s step-end infinite;
-  }
-  @keyframes typing {
+    typing 2s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+@keyframes typing {
     from { width: 0 }
     to { width: 50% }
-  }
-  @keyframes blink-caret {
+}
+@keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color:orange ; }
-  }
-  .centered{
-      text-align: center;
-  }
-  .Newest{
-        font-weight: 500;
+}
+.centered{
+    text-align: center;
+}
+.inputContainer{
+    margin:auto;
+    /* margin-bottom: 10px; */
+    }  
+.sorting{
+    display: flex;
+    /* margin: auto;  */
+    align-items: center;
+    /* margin-bottom: 10px; */
+    /* margin:1em; */
+    border-radius: 10px;
+    background-color:rgb(93, 153, 179);
+    opacity:.7;
+    padding:3px;
+    /* border: 1px solid red; */
+    text-align: center;
+    border: #704f6b .2em solid;
+
+   
 }
 .search_Button{
     background-color:rgb(93, 153, 179);
-    opacity:.5;
+    opacity:.7;
     padding: 3px;
-    margin-left: 3px;
-    border: #704f6b .3em solid;
+    margin-left: 2px;
+    border: #704f6b .2em solid;
     border-radius: 10px;
     
 }
+.Newest{
+/* opacity: .7; */
+/* border: 1px solid red; */
+
+
+    }
+.checkbox-css{
+    width: .8em;
+    height: .8em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+
+    /* border: 1px solid red; */
+    /* border-radius: 50%; */
+}
+.checkbox-css:checked {
+    background-color: #9E6D97;
+}
+
 .loading{
     margin:auto;
     width: 400px;
